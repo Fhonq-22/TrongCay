@@ -1,0 +1,65 @@
+#center-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#show-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    align-items: flex-start; /* Căn lề trái */
+    order: 1;
+}
+
+#show-button {
+    cursor: pointer;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+#image-list {
+    display: none;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-size: cover;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    align-items: center;
+    order: 2;
+}
+
+#plant {
+    width: 200px; /* Độ rộng nhỏ hơn của cây (div 1) */
+    height: 250px; /* Chiều cao nhỏ hơn của cây (div 1) */
+    background-color: green; /* Màu nền của cây */
+    background-size: cover;
+}
+
+#pot {
+    width: 100px; /* Độ rộng của chậu cây (div 2) */
+    height: 100px; /* Chiều cao của chậu cây (div 2) */
+    background-image: url("IMG/flower-pot.png"); /* Hình ảnh nền của chậu cây */
+    background-size: contain; /* Hiển thị hình ảnh toàn bộ bên trong kích thước của div */
+}
+
+
+#water-can {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#water-drops {
+    background-color: lightblue;
+    padding: 5px;
+}
